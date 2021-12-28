@@ -12,11 +12,11 @@
     <div class="container mt-4 mx-auto w-50">
         <a class="float-right" href="/users">View All Users</a>
         <h1>User {{ user.id }}: {{ user.first_name }} {{ user.last_name }}</h1>
-        <div class="container mt-4 mb-4 p-4 border border-dark">
-            <h2>Full Name: {{ user.first_name }} {{ user.last_name }}</h2>
-            <h2>Email: {{ user.email }}</h2>
-            <h2>Created At: {{ user.created_at }}</h2>
-            <h2>Updated At: {{ user.updated_at }}</h2>
+        <div class="container mt-4 mb-4 p-4 border rounded border-dark bg-dark">
+            <h2 class="text-light"><span class="text-warning">Full Name: </span>{{ user.first_name }} {{ user.last_name }}</h2>
+            <h2 class="text-light"><span class="text-warning">Email: </span>{{ user.email }}</h2>
+            <h2 class="text-light"><span class="text-warning">Created At: </span>{{ user.created_at }}</h2>
+            <h2 class="text-light"><span class="text-warning">Updated At: </span>{{ user.updated_at }}</h2>
         </div>
         <a href="/user/edit/{{ user.id }}">Edit</a> |
         <a href="/user/delete/{{ user.id }}">Delete</a>

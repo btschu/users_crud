@@ -34,7 +34,7 @@ def show(id):
     }
     return render_template("read_one.html", user = User.get_one(data))
 
-@app.route('/user/update', methods = ['POST'])
+@app.route('/user/update',methods=['POST'])
 def update():
     User.update(request.form)
     return redirect('/users')
